@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Temperatura</h1>
+        <form id="converterForm">
+            <label for="temperature">Temperatura:</label>
+            <input type="number" id="temperature" placeholder="Ingresa una temperatura" required>
+
+            <label for="fromUnit">Desde:</label>
+            <select id="fromUnit" required>
+                <option value="">Seleccionar unidad</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <label for="toUnit">Hasta:</label>
+            <select id="toUnit" required>
+                <option value="">Seleccionar unidad</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button type="button" id="convertBtn" disabled>Convertir</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+   
+</body>
+</html>
